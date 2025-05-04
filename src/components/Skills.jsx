@@ -40,27 +40,26 @@ const Skills = () => {
           ))}
         </div>
 
-        <div className="grid grid-cols-2 gap-8">
-          {filteredSkills.map((skill, index) => (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {filteredSkills.map((skill, key) => (
             <div
-              key={index}
-              className="gradient-border rounded-lg p-4 shadow-md card-hover"
+              key={key}
+              className="bg-card p-6 rounded-lg shadow-xs card-hover"
             >
               <div className="text-left mb-4">
-                <div className="p-3 rounded-full">
-                  <h3 className="font-semibold text-lg">{skill.name}</h3>
-                </div>
-                <div className="text-left flex-grow">
-                  <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-                    <div
-                      className={`bg-primary h-2.5 rounded-full`}
-                      style={{ width: `${skill.level}%` }}
-                    ></div>
-                  </div>
-                  <div className="text-muted-foreground text-sm mt-3 text-right">
-                    {skill.level}%
-                  </div>
-                </div>
+                <h3 className="font-semibold text-lg"> {skill.name}</h3>
+              </div>
+              <div className="w-full bg-secondary/50 h-2 rounded-full overflow-hidden">
+                <div
+                  className="bg-primary h-2 rounded-full origin-left animate-[grow_1.5s_ease-out]"
+                  style={{ width: skill.level + "%" }}
+                />
+              </div>
+
+              <div className="text-right mt-1">
+                <span className="text-sm text-muted-foreground">
+                  {skill.level}%
+                </span>
               </div>
             </div>
           ))}
