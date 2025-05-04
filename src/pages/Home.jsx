@@ -1,6 +1,6 @@
 import React from 'react'
 import StarBackground from '../components/StarBackground'
-import NavBar from '../components/NavBar'
+import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
 import AboutMe from '../components/AboutMe'
 import Skills from '../components/Skills'
@@ -12,7 +12,7 @@ function Home() {
   return (
     <div className='min-h-screen'>
         <StarBackground />
-        <NavBar />
+        <Navbar />
         <main>
           <Hero />
           <AboutMe />
