@@ -3,32 +3,32 @@ import { ExternalLink, Github, ArrowRight } from "lucide-react";
 const projectsList = [
   {
     id: 1,
-    title: "SaaS Landing Page",
-    description: "A beautiful landing page app using React and Tailwind.",
+    title: "Software Agency Landing Page",
+    description: "A beautiful landing page app using Next.Js and Tailwind.",
     image: "/projects/project1.png",
-    tags: ["React", "TailwindCSS"],
-    demoUrl: "#",
-    githubUrl: "#",
+    tags: ["Next.Js", "TailwindCSS"],
+    demoUrl: "https://codewan-saas.vercel.app/",
+    githubUrl: "https://github.com/ridowansarder/portfolio.git",
   },
   {
     id: 2,
-    title: "Orbit Analytics Dashboard",
+    title: "Hotel Booking Website",
     description:
-      "Interactive analytics dashboard with data visualization and filtering capabilities.",
+      "A hotel booking website built with React.js and TypeScript.",
     image: "/projects/project2.png",
-    tags: ["TypeScript", "Next.js"],
-    demoUrl: "#",
-    githubUrl: "#",
+    tags: ["TypeScript", "React.js", "TailwindCSS"],
+    demoUrl: "https://snorvo-hotel.vercel.app/",
+    githubUrl: "https://github.com/ridowansarder/snorvo-hotel.git",
   },
   {
     id: 3,
-    title: "E-commerce Platform",
+    title: "E-commerce Frontend",
     description:
-      "Full-featured e-commerce platform with user authentication and payment processing.",
+      "An e-commerce web frontend built with Next.Js and TailwindCSS.",
     image: "/projects/project3.png",
-    tags: ["React", "TailwindCSS", "AppWrite"],
-    demoUrl: "#",
-    githubUrl: "#",
+    tags: ["Next.js", "TailwindCSS", "TypeScript"],
+    demoUrl: "https://ecomm-snorvo.vercel.app/",
+    githubUrl: "https://github.com/ridowansarder/ecomm-snorvo.git",
   },
 ];
 
